@@ -4,7 +4,15 @@
         <TargetFramework>net9.0</TargetFramework>
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
-        <RootNamespace>GamesWithFriends.Infrastucture</RootNamespace>
+        <RootNamespace>GamesWithFriends.Infrastructure</RootNamespace>
     </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="9.0.4"/>
+    </ItemGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\GamesWithFriends.Core\GamesWithFriends.Core.csproj"/>
+    </ItemGroup>
 
 </Project>
