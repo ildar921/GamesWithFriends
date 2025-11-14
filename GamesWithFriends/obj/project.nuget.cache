@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "mmz/JEzFqDM=",
+  "success": true,
+  "projectFilePath": "/home/ildar/.projects/GamesWithFriends/GamesWithFriends/GamesWithFriends.csproj",
+  "expectedPackageFiles": [
+    "/home/ildar/.nuget/packages/microsoft.aspnetcore.app.ref/9.0.9/microsoft.aspnetcore.app.ref.9.0.9.nupkg.sha512"
+  ],
+  "logs": []
+}
