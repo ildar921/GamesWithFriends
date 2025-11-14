@@ -8,11 +8,16 @@
     </PropertyGroup>
 
     <ItemGroup>
+        <PackageReference Include="BCrypt.Net-Next" Version="4.0.3"/>
         <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="9.0.4"/>
     </ItemGroup>
 
     <ItemGroup>
         <ProjectReference Include="..\GamesWithFriends.Core\GamesWithFriends.Core.csproj"/>
+    </ItemGroup>
+
+    <ItemGroup>
+        <Folder Include="Repositories\"/>
     </ItemGroup>
 
 </Project>
