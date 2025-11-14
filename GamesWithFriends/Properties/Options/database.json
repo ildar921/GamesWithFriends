@@ -1,0 +1,5 @@
+{
+  "ConnectionStrings": {
+    "PostgreSQL": "User ID=postgres;Password=postgres;Host=localhost;Port=5432;Database=games_with_friends;Pooling=true;Minimum Pool Size=0;Maximum Pool Size=100;Connection Lifetime=0;"
+  }
+}
