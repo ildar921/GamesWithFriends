@@ -5,6 +5,8 @@ VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GamesWithFriends", "GamesWithFriends\GamesWithFriends.csproj", "{9BCD9410-95E6-48F1-8425-3F53043537A7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GamesWithFriends.Core", "GamesWithFriends.Core\GamesWithFriends.Core.csproj", "{864CFAAE-5A77-4F53-96EA-B2B34EFED420}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +20,9 @@ Global
 		{9BCD9410-95E6-48F1-8425-3F53043537A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9BCD9410-95E6-48F1-8425-3F53043537A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9BCD9410-95E6-48F1-8425-3F53043537A7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{864CFAAE-5A77-4F53-96EA-B2B34EFED420}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{864CFAAE-5A77-4F53-96EA-B2B34EFED420}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{864CFAAE-5A77-4F53-96EA-B2B34EFED420}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{864CFAAE-5A77-4F53-96EA-B2B34EFED420}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
