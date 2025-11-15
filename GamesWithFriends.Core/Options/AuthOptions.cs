@@ -20,6 +20,9 @@ public sealed record AuthOptions
     public SymmetricSecurityKey SymmetricSecurityKey =>
         new(Encoding.UTF8.GetBytes(IssuerSigningKey));
 
+    public SigningCredentials SigningCredentials =>
+        new(SymmetricSecurityKey, SecurityAlgorithms.HmacSha256);
+
     public TokenValidationParameters ValidationParameters =>
         new()
         {
