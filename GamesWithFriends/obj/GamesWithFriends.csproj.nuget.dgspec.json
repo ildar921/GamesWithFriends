@@ -4,14 +4,92 @@
     "/home/ildar/.projects/GamesWithFriends/GamesWithFriends/GamesWithFriends.csproj": {}
   },
   "projects": {
-    "/home/ildar/.projects/GamesWithFriends/GamesWithFriends/GamesWithFriends.csproj": {
+    "/home/ildar/.projects/GamesWithFriends/GamesWithFriends.Application/GamesWithFriends.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/ildar/.projects/GamesWithFriends/GamesWithFriends/GamesWithFriends.csproj",
-        "projectName": "GamesWithFriends",
-        "projectPath": "/home/ildar/.projects/GamesWithFriends/GamesWithFriends/GamesWithFriends.csproj",
+        "projectUniqueName": "/home/ildar/.projects/GamesWithFriends/GamesWithFriends.Application/GamesWithFriends.Application.csproj",
+        "projectName": "GamesWithFriends.Application",
+        "projectPath": "/home/ildar/.projects/GamesWithFriends/GamesWithFriends.Application/GamesWithFriends.Application.csproj",
         "packagesPath": "/home/ildar/.nuget/packages/",
-        "outputPath": "/home/ildar/.projects/GamesWithFriends/GamesWithFriends/obj/",
+        "outputPath": "/home/ildar/.projects/GamesWithFriends/GamesWithFriends.Application/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/ildar/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {
+              "/home/ildar/.projects/GamesWithFriends/GamesWithFriends.Core/GamesWithFriends.Core.csproj": {
+                "projectPath": "/home/ildar/.projects/GamesWithFriends/GamesWithFriends.Core/GamesWithFriends.Core.csproj"
+              },
+              "/home/ildar/.projects/GamesWithFriends/GamesWithFriends.Infrastructure/GamesWithFriends.Infrastructure.csproj": {
+                "projectPath": "/home/ildar/.projects/GamesWithFriends/GamesWithFriends.Infrastructure/GamesWithFriends.Infrastructure.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.100"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[9.0.11, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[9.0.9, 9.0.9]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/9.0.110/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/ildar/.projects/GamesWithFriends/GamesWithFriends.Core/GamesWithFriends.Core.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/ildar/.projects/GamesWithFriends/GamesWithFriends.Core/GamesWithFriends.Core.csproj",
+        "projectName": "GamesWithFriends.Core",
+        "projectPath": "/home/ildar/.projects/GamesWithFriends/GamesWithFriends.Core/GamesWithFriends.Core.csproj",
+        "packagesPath": "/home/ildar/.nuget/packages/",
+        "outputPath": "/home/ildar/.projects/GamesWithFriends/GamesWithFriends.Core/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/ildar/.nuget/NuGet/NuGet.Config"
@@ -43,6 +121,182 @@
       "frameworks": {
         "net9.0": {
           "targetAlias": "net9.0",
+          "dependencies": {
+            "Microsoft.IdentityModel.Tokens": {
+              "target": "Package",
+              "version": "[8.14.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[9.0.9, 9.0.9]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/9.0.110/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/ildar/.projects/GamesWithFriends/GamesWithFriends.Infrastructure/GamesWithFriends.Infrastructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/ildar/.projects/GamesWithFriends/GamesWithFriends.Infrastructure/GamesWithFriends.Infrastructure.csproj",
+        "projectName": "GamesWithFriends.Infrastructure",
+        "projectPath": "/home/ildar/.projects/GamesWithFriends/GamesWithFriends.Infrastructure/GamesWithFriends.Infrastructure.csproj",
+        "packagesPath": "/home/ildar/.nuget/packages/",
+        "outputPath": "/home/ildar/.projects/GamesWithFriends/GamesWithFriends.Infrastructure/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/ildar/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {
+              "/home/ildar/.projects/GamesWithFriends/GamesWithFriends.Core/GamesWithFriends.Core.csproj": {
+                "projectPath": "/home/ildar/.projects/GamesWithFriends/GamesWithFriends.Core/GamesWithFriends.Core.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.100"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "dependencies": {
+            "BCrypt.Net-Next": {
+              "target": "Package",
+              "version": "[4.0.3, )"
+            },
+            "Npgsql.EntityFrameworkCore.PostgreSQL": {
+              "target": "Package",
+              "version": "[9.0.4, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[9.0.9, 9.0.9]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/9.0.110/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/ildar/.projects/GamesWithFriends/GamesWithFriends/GamesWithFriends.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/ildar/.projects/GamesWithFriends/GamesWithFriends/GamesWithFriends.csproj",
+        "projectName": "GamesWithFriends",
+        "projectPath": "/home/ildar/.projects/GamesWithFriends/GamesWithFriends/GamesWithFriends.csproj",
+        "packagesPath": "/home/ildar/.nuget/packages/",
+        "outputPath": "/home/ildar/.projects/GamesWithFriends/GamesWithFriends/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/ildar/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {
+              "/home/ildar/.projects/GamesWithFriends/GamesWithFriends.Application/GamesWithFriends.Application.csproj": {
+                "projectPath": "/home/ildar/.projects/GamesWithFriends/GamesWithFriends.Application/GamesWithFriends.Application.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.100"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "dependencies": {
+            "HotChocolate": {
+              "target": "Package",
+              "version": "[15.1.11, )"
+            },
+            "HotChocolate.AspNetCore": {
+              "target": "Package",
+              "version": "[15.1.11, )"
+            },
+            "HotChocolate.AspNetCore.Authorization": {
+              "target": "Package",
+              "version": "[15.1.11, )"
+            },
+            "HotChocolate.Data": {
+              "target": "Package",
+              "version": "[15.1.11, )"
+            },
+            "HotChocolate.Data.EntityFramework": {
+              "target": "Package",
+              "version": "[15.1.11, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

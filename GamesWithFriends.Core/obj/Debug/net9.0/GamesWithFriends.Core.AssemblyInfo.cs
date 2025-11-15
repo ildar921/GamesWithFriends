@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("GamesWithFriends.Core")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+64e82e4a0aace053acf612228fb1b1e3c1d4c452")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+fb9d03a00023b4e3cd60a083bf1f8f7d729754bc")]
 [assembly: System.Reflection.AssemblyProductAttribute("GamesWithFriends.Core")]
 [assembly: System.Reflection.AssemblyTitleAttribute("GamesWithFriends.Core")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

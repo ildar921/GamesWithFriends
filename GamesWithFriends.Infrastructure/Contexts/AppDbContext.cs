@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace GamesWithFriends.Infrastructure.Contexts;
 
-public sealed class AppDbContext : DbContext
+public sealed class AppDbContext(DbContextOptions options) : DbContext(options)
 {
     public DbSet<Customer> Customers { get; set; } = null!;
     public DbSet<Notification> Notifications { get; set; } = null!;
