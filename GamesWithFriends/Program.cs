@@ -6,4 +6,8 @@ builder.Configure();
 
 var app = builder.Build();
 
+app.UseAuthentication();
+app.UseAuthorization();
+app.MapGraphQL();
+
 await app.RunAsync();

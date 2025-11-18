@@ -17,6 +17,8 @@ public sealed record AuthOptions
     public string IssuerSigningKey { get; init; } = "invalid_key";
     public TokensLifetimes Lifetimes { get; init; } = new(24, 360);
 
+    public string CookieKey { get; init; } = "AspNetCore.Localization.Id";
+
     public SymmetricSecurityKey SymmetricSecurityKey =>
         new(Encoding.UTF8.GetBytes(IssuerSigningKey));
 

@@ -1,0 +1,16 @@
+/home/ildar/.projects/GamesWithFriends/GamesWithFriends.Infrastructure/bin/Debug/net9.0/GamesWithFriends.Infrastructure.deps.json
+/home/ildar/.projects/GamesWithFriends/GamesWithFriends.Infrastructure/bin/Debug/net9.0/GamesWithFriends.Infrastructure.dll
+/home/ildar/.projects/GamesWithFriends/GamesWithFriends.Infrastructure/bin/Debug/net9.0/GamesWithFriends.Infrastructure.pdb
+/home/ildar/.projects/GamesWithFriends/GamesWithFriends.Infrastructure/bin/Debug/net9.0/GamesWithFriends.Core.dll
+/home/ildar/.projects/GamesWithFriends/GamesWithFriends.Infrastructure/bin/Debug/net9.0/GamesWithFriends.Core.pdb
+/home/ildar/.projects/GamesWithFriends/GamesWithFriends.Infrastructure/obj/Debug/net9.0/GamesWithFriends.Infrastructure.csproj.AssemblyReference.cache
+/home/ildar/.projects/GamesWithFriends/GamesWithFriends.Infrastructure/obj/Debug/net9.0/GamesWithFriends.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+/home/ildar/.projects/GamesWithFriends/GamesWithFriends.Infrastructure/obj/Debug/net9.0/GamesWithFriends.Infrastructure.AssemblyInfoInputs.cache
+/home/ildar/.projects/GamesWithFriends/GamesWithFriends.Infrastructure/obj/Debug/net9.0/GamesWithFriends.Infrastructure.AssemblyInfo.cs
+/home/ildar/.projects/GamesWithFriends/GamesWithFriends.Infrastructure/obj/Debug/net9.0/GamesWithFriends.Infrastructure.csproj.CoreCompileInputs.cache
+/home/ildar/.projects/GamesWithFriends/GamesWithFriends.Infrastructure/obj/Debug/net9.0/GamesWithFriends.Infrastructure.sourcelink.json
+/home/ildar/.projects/GamesWithFriends/GamesWithFriends.Infrastructure/obj/Debug/net9.0/GamesWit.A4192306.Up2Date
+/home/ildar/.projects/GamesWithFriends/GamesWithFriends.Infrastructure/obj/Debug/net9.0/GamesWithFriends.Infrastructure.dll
+/home/ildar/.projects/GamesWithFriends/GamesWithFriends.Infrastructure/obj/Debug/net9.0/refint/GamesWithFriends.Infrastructure.dll
+/home/ildar/.projects/GamesWithFriends/GamesWithFriends.Infrastructure/obj/Debug/net9.0/GamesWithFriends.Infrastructure.pdb
+/home/ildar/.projects/GamesWithFriends/GamesWithFriends.Infrastructure/obj/Debug/net9.0/ref/GamesWithFriends.Infrastructure.dll

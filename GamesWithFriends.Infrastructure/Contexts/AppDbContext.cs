@@ -28,11 +28,9 @@ public sealed class AppDbContext(DbContextOptions options) : DbContext(options)
                 .IsRequired()
                 .HasDefaultValue(0);
 
-            options.Property(customer => customer.Notifications)
-                .IsRequired();
-
             options.HasMany(customer => customer.Notifications)
-                .WithOne(notification => notification.Receiver);
+                .WithOne(notification => notification.Receiver)
+                .IsRequired();
         });
 
         modelBuilder.Entity<Notification>(options =>

@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("GamesWithFriends.Infrastructure")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+fb9d03a00023b4e3cd60a083bf1f8f7d729754bc")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2b5e56c8b3a755711eeba5aee3a2585a1093d84a")]
 [assembly: System.Reflection.AssemblyProductAttribute("GamesWithFriends.Infrastructure")]
 [assembly: System.Reflection.AssemblyTitleAttribute("GamesWithFriends.Infrastructure")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

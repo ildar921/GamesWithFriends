@@ -2,6 +2,7 @@ using System.IdentityModel.Tokens.Jwt;
 using GamesWithFriends.Core.Enums;
 using GamesWithFriends.Core.Options;
 using GamesWithFriends.Infrastructure.Repositories;
+using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using ClaimTypes = GamesWithFriends.Core.Enums.ClaimTypes;
 
@@ -27,11 +28,11 @@ public sealed class AuthService(
         var decodedToken = await new JwtSecurityTokenHandler()
             .ValidateTokenAsync(refreshToken, _authOptions.ValidationParameters);
 
-        if (decodedToken is null || !decodedToken.IsValid)
+        if (!decodedToken.IsValid)
             return (null, null);
 
         var usernameClaim = decodedToken.Claims
-            .FirstOrDefault(claim => claim.Key == nameof(ClaimTypes.Username));
+            .FirstOrDefault(claim => claim.Key == nameof(ClaimTypes.Username).ToLower());
 
         if (usernameClaim.Value is not string username)
             return (null, null);

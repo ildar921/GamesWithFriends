@@ -13,10 +13,17 @@ public static class ServicesCollectionExtensions
 {
     public static void Configure(this IServiceCollection services, IConfiguration configuration)
     {
+        services.ConfigureOptions(configuration);
         services.ConfigureDatabaseServices(configuration);
         services.ConfigureCommonServices();
         services.ConfigureAdminServices();
+        services.ConfigureAuth();
         services.ConfigureGraphQl();
+    }
+
+    private static void ConfigureOptions(this IServiceCollection services, IConfiguration configuration)
+    {
+        services.Configure<AuthOptions>(configuration.GetSection("AuthOptions"));
     }
 
     private static void ConfigureDatabaseServices(this IServiceCollection services, IConfiguration configuration)
@@ -44,15 +51,21 @@ public static class ServicesCollectionExtensions
             .GetRequiredService<IOptions<AuthOptions>>().Value;
 
         services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
-            .AddJwtBearer(options => { options.TokenValidationParameters = authOptions.ValidationParameters });
+            .AddJwtBearer(options => { options.TokenValidationParameters = authOptions.ValidationParameters; });
 
         services.AddAuthorization();
     }
 
     private static void ConfigureGraphQl(this IServiceCollection services)
     {
+        services.AddHttpContextAccessor();
+
         services.AddGraphQLServer()
             .AddAuthorization()
+            .AddPagingArguments()
+            .AddProjections()
+            .AddFiltering()
+            .AddSorting()
             .AddGamesWithFriendsTypes();
     }
 }
