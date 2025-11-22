@@ -1,0 +1,10 @@
+﻿{
+  "CookiePresets": {
+    "Presets": {
+      "SecureHttpOnly": {
+        "Secure": true,
+        "HttpOnly": true
+      }
+    }
+  }
+}

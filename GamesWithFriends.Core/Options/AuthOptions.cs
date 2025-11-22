@@ -1,4 +1,5 @@
 // ReSharper disable MemberCanBePrivate.Global
+// ReSharper disable AutoPropertyCanBeMadeGetOnly.Global
 
 using System.Text;
 using Microsoft.IdentityModel.Tokens;

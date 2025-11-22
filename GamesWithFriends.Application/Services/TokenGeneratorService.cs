@@ -4,7 +4,6 @@ using GamesWithFriends.Core.Enums;
 using GamesWithFriends.Core.Options;
 using GamesWithFriends.Infrastructure.Repositories;
 using Microsoft.Extensions.Options;
-using ClaimTypes = GamesWithFriends.Core.Enums.ClaimTypes;
 
 namespace GamesWithFriends.Application.Services;
 
@@ -33,8 +32,8 @@ public class TokenGeneratorService(ICustomersRepository repo, IOptions<AuthOptio
     {
         var claims = new Claim[]
         {
-            new(nameof(ClaimTypes.Username).ToLower(), username),
-            new(nameof(ClaimTypes.Role).ToLower(), role)
+            new(nameof(ClaimType.Username).ToLower(), username),
+            new(nameof(ClaimType.Role).ToLower(), role)
         };
 
         var token = new JwtSecurityToken(

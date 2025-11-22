@@ -2,9 +2,12 @@ namespace GamesWithFriends.Extensions;
 
 public static class WebApplicationBuilderExtensions
 {
-    public static void Configure(this WebApplicationBuilder builder)
+    extension(WebApplicationBuilder builder)
     {
-        builder.Configuration.Configure();
-        builder.Services.Configure(builder.Configuration);
+        public void Configure()
+        {
+            builder.Configuration.Configure();
+            builder.Services.Configure(builder.Configuration);
+        }
     }
 }

@@ -8,6 +8,6 @@ var app = builder.Build();
 
 app.UseAuthentication();
 app.UseAuthorization();
-app.MapGraphQL();
+app.MapControllers();
 
 await app.RunAsync();

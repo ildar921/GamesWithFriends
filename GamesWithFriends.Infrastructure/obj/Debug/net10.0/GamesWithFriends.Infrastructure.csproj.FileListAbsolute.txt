@@ -1,0 +1,16 @@
+C:\Users\Ildar\.projects\GamesWithFriends\GamesWithFriends.Infrastructure\bin\Debug\net10.0\GamesWithFriends.Infrastructure.deps.json
+C:\Users\Ildar\.projects\GamesWithFriends\GamesWithFriends.Infrastructure\bin\Debug\net10.0\GamesWithFriends.Infrastructure.dll
+C:\Users\Ildar\.projects\GamesWithFriends\GamesWithFriends.Infrastructure\bin\Debug\net10.0\GamesWithFriends.Infrastructure.pdb
+C:\Users\Ildar\.projects\GamesWithFriends\GamesWithFriends.Infrastructure\bin\Debug\net10.0\GamesWithFriends.Core.dll
+C:\Users\Ildar\.projects\GamesWithFriends\GamesWithFriends.Infrastructure\bin\Debug\net10.0\GamesWithFriends.Core.pdb
+C:\Users\Ildar\.projects\GamesWithFriends\GamesWithFriends.Infrastructure\obj\Debug\net10.0\GamesWithFriends.Infrastructure.csproj.AssemblyReference.cache
+C:\Users\Ildar\.projects\GamesWithFriends\GamesWithFriends.Infrastructure\obj\Debug\net10.0\GamesWithFriends.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Ildar\.projects\GamesWithFriends\GamesWithFriends.Infrastructure\obj\Debug\net10.0\GamesWithFriends.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\Ildar\.projects\GamesWithFriends\GamesWithFriends.Infrastructure\obj\Debug\net10.0\GamesWithFriends.Infrastructure.AssemblyInfo.cs
+C:\Users\Ildar\.projects\GamesWithFriends\GamesWithFriends.Infrastructure\obj\Debug\net10.0\GamesWithFriends.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\Ildar\.projects\GamesWithFriends\GamesWithFriends.Infrastructure\obj\Debug\net10.0\GamesWithFriends.Infrastructure.sourcelink.json
+C:\Users\Ildar\.projects\GamesWithFriends\GamesWithFriends.Infrastructure\obj\Debug\net10.0\GamesWit.A4192306.Up2Date
+C:\Users\Ildar\.projects\GamesWithFriends\GamesWithFriends.Infrastructure\obj\Debug\net10.0\GamesWithFriends.Infrastructure.dll
+C:\Users\Ildar\.projects\GamesWithFriends\GamesWithFriends.Infrastructure\obj\Debug\net10.0\refint\GamesWithFriends.Infrastructure.dll
+C:\Users\Ildar\.projects\GamesWithFriends\GamesWithFriends.Infrastructure\obj\Debug\net10.0\GamesWithFriends.Infrastructure.pdb
+C:\Users\Ildar\.projects\GamesWithFriends\GamesWithFriends.Infrastructure\obj\Debug\net10.0\ref\GamesWithFriends.Infrastructure.dll

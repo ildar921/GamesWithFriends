@@ -11,3 +11,16 @@
 /home/ildar/.projects/GamesWithFriends/GamesWithFriends.Core/obj/Debug/net9.0/refint/GamesWithFriends.Core.dll
 /home/ildar/.projects/GamesWithFriends/GamesWithFriends.Core/obj/Debug/net9.0/GamesWithFriends.Core.pdb
 /home/ildar/.projects/GamesWithFriends/GamesWithFriends.Core/obj/Debug/net9.0/ref/GamesWithFriends.Core.dll
+C:\Users\Ildar\.projects\GamesWithFriends\GamesWithFriends.Core\bin\Debug\net9.0\GamesWithFriends.Core.deps.json
+C:\Users\Ildar\.projects\GamesWithFriends\GamesWithFriends.Core\bin\Debug\net9.0\GamesWithFriends.Core.dll
+C:\Users\Ildar\.projects\GamesWithFriends\GamesWithFriends.Core\bin\Debug\net9.0\GamesWithFriends.Core.pdb
+C:\Users\Ildar\.projects\GamesWithFriends\GamesWithFriends.Core\obj\Debug\net9.0\GamesWithFriends.Core.csproj.AssemblyReference.cache
+C:\Users\Ildar\.projects\GamesWithFriends\GamesWithFriends.Core\obj\Debug\net9.0\GamesWithFriends.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Ildar\.projects\GamesWithFriends\GamesWithFriends.Core\obj\Debug\net9.0\GamesWithFriends.Core.AssemblyInfoInputs.cache
+C:\Users\Ildar\.projects\GamesWithFriends\GamesWithFriends.Core\obj\Debug\net9.0\GamesWithFriends.Core.AssemblyInfo.cs
+C:\Users\Ildar\.projects\GamesWithFriends\GamesWithFriends.Core\obj\Debug\net9.0\GamesWithFriends.Core.csproj.CoreCompileInputs.cache
+C:\Users\Ildar\.projects\GamesWithFriends\GamesWithFriends.Core\obj\Debug\net9.0\GamesWithFriends.Core.sourcelink.json
+C:\Users\Ildar\.projects\GamesWithFriends\GamesWithFriends.Core\obj\Debug\net9.0\GamesWithFriends.Core.dll
+C:\Users\Ildar\.projects\GamesWithFriends\GamesWithFriends.Core\obj\Debug\net9.0\refint\GamesWithFriends.Core.dll
+C:\Users\Ildar\.projects\GamesWithFriends\GamesWithFriends.Core\obj\Debug\net9.0\GamesWithFriends.Core.pdb
+C:\Users\Ildar\.projects\GamesWithFriends\GamesWithFriends.Core\obj\Debug\net9.0\ref\GamesWithFriends.Core.dll

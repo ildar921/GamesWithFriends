@@ -11,61 +11,57 @@ namespace GamesWithFriends.Extensions;
 
 public static class ServicesCollectionExtensions
 {
-    public static void Configure(this IServiceCollection services, IConfiguration configuration)
+    extension(IServiceCollection services)
     {
-        services.ConfigureOptions(configuration);
-        services.ConfigureDatabaseServices(configuration);
-        services.ConfigureCommonServices();
-        services.ConfigureAdminServices();
-        services.ConfigureAuth();
-        services.ConfigureGraphQl();
-    }
+        public void Configure(IConfiguration configuration)
+        {
+            services.ConfigureOptions(configuration);
+            services.ConfigureDatabaseServices(configuration);
+            services.ConfigureCommonServices();
+            services.ConfigureAdminServices();
+            services.ConfigureAuth();
+            services.ConfigureApi();
+        }
 
-    private static void ConfigureOptions(this IServiceCollection services, IConfiguration configuration)
-    {
-        services.Configure<AuthOptions>(configuration.GetSection("AuthOptions"));
-    }
+        private void ConfigureOptions(IConfiguration configuration)
+        {
+            services.Configure<AuthOptions>(configuration.GetSection("AuthOptions"));
+            services.Configure<CookiePresetsOptions>(configuration.GetSection("CookiePresets"));
+        }
 
-    private static void ConfigureDatabaseServices(this IServiceCollection services, IConfiguration configuration)
-    {
-        services.AddDbContextPool<AppDbContext>(options => options
-            .UseNpgsql(configuration.GetConnectionString("PostgreSQL")));
+        private void ConfigureDatabaseServices(IConfiguration configuration)
+        {
+            services.AddDbContextPool<AppDbContext>(options => options
+                .UseNpgsql(configuration.GetConnectionString("PostgreSQL")));
 
-        services.AddTransient<ICustomersRepository, CustomersRepository>();
-        services.AddTransient<IHasherService, HasherService>();
-    }
+            services.AddTransient<ICustomersRepository, CustomersRepository>();
+            services.AddTransient<IHasherService, HasherService>();
+        }
 
-    private static void ConfigureCommonServices(this IServiceCollection services)
-    {
-        services.AddTransient<IAuthService, AuthService>();
-        services.AddTransient<ITokenGeneratorService, TokenGeneratorService>();
-    }
+        private void ConfigureCommonServices()
+        {
+            services.AddTransient<IAuthService, AuthService>();
+            services.AddTransient<ITokenGeneratorService, TokenGeneratorService>();
+        }
 
-    private static void ConfigureAdminServices(this IServiceCollection services)
-    {
-    }
+        private void ConfigureAdminServices()
+        {
+        }
 
-    private static void ConfigureAuth(this IServiceCollection services)
-    {
-        var authOptions = services.BuildServiceProvider()
-            .GetRequiredService<IOptions<AuthOptions>>().Value;
+        private void ConfigureAuth()
+        {
+            var authOptions = services.BuildServiceProvider()
+                .GetRequiredService<IOptions<AuthOptions>>().Value;
 
-        services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
-            .AddJwtBearer(options => { options.TokenValidationParameters = authOptions.ValidationParameters; });
+            services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
+                .AddJwtBearer(options => { options.TokenValidationParameters = authOptions.ValidationParameters; });
 
-        services.AddAuthorization();
-    }
+            services.AddAuthorization();
+        }
 
-    private static void ConfigureGraphQl(this IServiceCollection services)
-    {
-        services.AddHttpContextAccessor();
-
-        services.AddGraphQLServer()
-            .AddAuthorization()
-            .AddPagingArguments()
-            .AddProjections()
-            .AddFiltering()
-            .AddSorting()
-            .AddGamesWithFriendsTypes();
+        private void ConfigureApi()
+        {
+            services.AddControllers();
+        }
     }
 }

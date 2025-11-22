@@ -4,7 +4,6 @@ using GamesWithFriends.Core.Options;
 using GamesWithFriends.Infrastructure.Repositories;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
-using ClaimTypes = GamesWithFriends.Core.Enums.ClaimTypes;
 
 namespace GamesWithFriends.Application.Services;
 
@@ -32,7 +31,7 @@ public sealed class AuthService(
             return (null, null);
 
         var usernameClaim = decodedToken.Claims
-            .FirstOrDefault(claim => claim.Key == nameof(ClaimTypes.Username).ToLower());
+            .FirstOrDefault(claim => claim.Key == nameof(ClaimType.Username).ToLower());
 
         if (usernameClaim.Value is not string username)
             return (null, null);
